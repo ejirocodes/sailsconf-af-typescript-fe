@@ -1,9 +1,10 @@
+"use client";
 import Image from "next/image";
 import { Card } from "@repo/ui";
 import { Code } from "@repo/ui";
 import styles from "./page.module.css";
 import { Button } from "@repo/ui";
-import { Configuration } from "@luppa/client";
+import { useCreateUser } from "./module/user/query/create-user.query";
 
 const LINKS = [
   {
@@ -30,6 +31,8 @@ const LINKS = [
 ];
 
 export default function Page(): JSX.Element {
+  const createUser = useCreateUser();
+
   return (
     <main className={styles.main}>
       <div>
@@ -56,8 +59,19 @@ export default function Page(): JSX.Element {
         </div>
       </div>
 
-      <Button appName="web" className={styles.button}>
-        Click me!
+      <Button
+        appName="web"
+        className={styles.button}
+        onClick={() =>
+          createUser({
+            email: "james",
+            name: "ejiro@joinveet.com",
+            password: "11111111",
+            role: {},
+          })
+        }
+      >
+        Create user
       </Button>
 
       <div className={styles.grid}>

@@ -9,8 +9,10 @@
     "lint": "eslint . --max-warnings 0"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
     "@luppa/client": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "@tanstack/react-query": "^5.36.2",
+    "axios": "^1.6.8",
     "next": "^14.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
