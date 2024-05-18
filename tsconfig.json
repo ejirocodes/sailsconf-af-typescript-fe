@@ -3,7 +3,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@repo/ui": ["packages/ui/src"]
+      "@repo/ui": ["packages/ui/src"],
+      "@luppa/client": ["packages/client/api"]
     },
     "target": "ES2020",
     "lib": ["dom", "esnext"],

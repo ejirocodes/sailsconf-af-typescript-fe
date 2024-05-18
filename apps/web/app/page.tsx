@@ -3,6 +3,7 @@ import { Card } from "@repo/ui";
 import { Code } from "@repo/ui";
 import styles from "./page.module.css";
 import { Button } from "@repo/ui";
+import { Configuration } from "@luppa/client";
 
 const LINKS = [
   {
