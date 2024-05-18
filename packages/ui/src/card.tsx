@@ -16,10 +16,10 @@ export function Card({
       rel="noopener noreferrer"
       target="_blank"
     >
-      <h2>
+      <h2 className="text-blue-400">
         {title} <span>-&gt;</span>
       </h2>
-      <p>{children}</p>
+      <p className="text-blue-800">{children}</p>
     </a>
   );
 }
